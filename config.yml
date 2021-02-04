@@ -1,0 +1,16 @@
+title: zyp's first warehouse
+description: zyp's first warehouse in github
+template:
+  repo: zyp's-first-warehouse-template
+  name: zyp's-first-warehouse
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
